@@ -174,7 +174,7 @@ public class PlayerController : MonoBehaviour
         Vector3 movement = Vector3.zero;
 
         //Finding closest target
-        if (TheAnimator.GetBool("IsStrafe"))
+        if (TheAnimator.GetBool("IsStrafe") && TheAnimator.GetBool("ReachSword") == false)
         {
             if (FindLockOnTarget == true)
             {

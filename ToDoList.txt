@@ -1,0 +1,10 @@
+add throw sword
+add boss
+add plasma missile turrets that shoots curved missiles
+
+add trail render to sword for slash effect
+
+Animation:
+Throw
+Yank
+Wait

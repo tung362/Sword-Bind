@@ -34,6 +34,10 @@ public class PlayerManager : MonoBehaviour
     public bool RELOAD;
     [HideInInspector]
     public bool DEBUG;
+    [HideInInspector]
+    public bool THROW;
+    [HideInInspector]
+    public bool REACH;
 
     //Components this script will be managing
     private PlayerAnimator TheAnimator;
@@ -79,5 +83,7 @@ public class PlayerManager : MonoBehaviour
         PAUSE = Input.GetButton("Pause");
         RELOAD = Input.GetButton("Reload");
         DEBUG = Input.GetButton("Debug");
+        THROW = Input.GetButton("Throw");
+        REACH = Input.GetButton("Reach");
     }
 }

@@ -14,6 +14,10 @@ public class PlayerAnimator : MonoBehaviour
     //Fall
     private Vector3 GroundPosition;
 
+    //Sword Throw
+    [HideInInspector]
+    public bool HasSword = true;
+
     private GlobalVars Global;
     private PlayerManager TheManager;
     private PlayerController ThePlayerController;
@@ -211,5 +215,25 @@ public class PlayerAnimator : MonoBehaviour
         }
         return distanceToGround;
     }
-#endregion
+    #endregion
+
+    #region Throw
+    void Throw()
+    {
+        if(TheManager.THROW && HasSword == true)
+        {
+            HasSword = false;
+        }
+    }
+    #endregion
+
+    #region Reach
+    void Reach()
+    {
+        if (TheManager.REACH)
+        {
+
+        }
+    }
+    #endregion
 }
